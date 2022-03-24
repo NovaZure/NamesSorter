@@ -38,5 +38,18 @@ with open('Sort Me.txt') as f:
 
 data = mySort(data)
 
+while True:
+    choice = input("Sort in reverse order? (y/n) --> ")
+
+    if choice[0] == "y":
+        data.reverse()
+        break
+    if choice[0] == "n":
+        break
+
+    print("Please enter either yes or no.")
+
+
 for x in data:
     print(x)
+
