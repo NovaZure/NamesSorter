@@ -1,0 +1,5 @@
+Place the Python file (JWHomework1.py) in the same directory as the data you want to sort, which should
+be contained in a file called 'Sort Me.txt'.
+
+The Python script will read the data from 'Sort Me.txt' and output the sorted content to the console.
+Tested on WSL (Ubuntu), March 9, 2022
