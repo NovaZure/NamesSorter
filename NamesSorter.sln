@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "NamesSorter", "JWHomework1\NamesSorter.pyproj", "{D8BF1887-020D-4C59-81FD-B930C3C79DFA}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "NamesSorter", "Code\NamesSorter.pyproj", "{D8BF1887-020D-4C59-81FD-B930C3C79DFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

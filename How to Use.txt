@@ -1,0 +1,8 @@
+Place the Python file (NamesSorter.py) in the same directory as the data you want to sort, which should
+be contained in a file called 'Sort Me.txt'.
+
+The script will ask you whether you want to sort the data in reverse or not. Enter "yes" or "no" to indicate your choice.
+
+The Python script will read the data from 'Sort Me.txt' and output the sorted content to the console.
+
+Tested on WSL (Ubuntu), March 23, 2022
