@@ -1,21 +1,8 @@
---- Setup ---
-Place the Python files in the same directory as the data you want to sort, which should
-be contained in a file called 'Sort Me.txt'. The test data should also be in this directory.
+Place the Python file (NamesSorter.py) in the same directory as the data you want to sort, which should
+be contained in a file called 'Sort Me.txt'.
 
---- Running the Script ---
-Run the script in the shell using the command
-python3 NamesSorter.py
+The script will ask you whether you want to sort the data in reverse or not. Enter "yes" or "no" to indicate your choice.
 
-If you wish to sort the data in reverse, instead run the command
-python3 NamesSorter.py -r
+The Python script will read the data from 'Sort Me.txt' and output the sorted content to the console.
 
-In either case, the output will be recorded in Output.txt
-
---- Testing ---
-To test the program, put your presorted output in "Sorted Text.txt" and reversed sorted text in "Sorted Text - Reversed.txt".
-Then run the command
-python3 Tester.py
-
-The Test script will test the output from both forwards and reverse sorting, and report any discrepancies to the console.
-
-Tested on WSL (Ubuntu), April 6, 2022
+Tested on WSL (Ubuntu), March 23, 2022

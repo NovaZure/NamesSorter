@@ -5,7 +5,7 @@
     <ProjectGuid>d8bf1887-020d-4c59-81fd-b930c3c79dfa</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>Tester.py</StartupFile>
+    <StartupFile>NamesSorter.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,9 +23,6 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Tester.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="NamesSorter.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
