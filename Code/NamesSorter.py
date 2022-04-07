@@ -1,4 +1,5 @@
 
+import sys
 import re
 
 #TODO: Use a more efficient sort than selection sort
@@ -24,32 +25,28 @@ def mySort(data):
     return data
 
 
-data = []
-
 #TODO: Add check to see if file exists
-with open('Sort Me.txt') as f:
-    #Add all of the data to a list
-    for line in f:
-        #Cut off any spaces, numbers, or newline characters
-        x = re.search("([A-Z]|[a-z]){2,}", line)
-        if (x and x.group()):
-            data.append(x.group())
+#Read in data
+def readData(f ='Sort Me.txt'):
+    data = []
+    with open('Sort Me.txt') as f:
+        #Add all of the data to a list
+        for line in f:
+            #Cut off any spaces, numbers, or newline characters
+            x = re.search("([A-Z]|[a-z]){2,}", line)
+            if (x and x.group()):
+                data.append(x.group())
+    return data
 
-
+data = readData()
 data = mySort(data)
 
-while True:
-    choice = input("Sort in reverse order? (y/n) --> ")
 
-    if choice[0] == "y":
-        data.reverse()
-        break
-    if choice[0] == "n":
-        break
+#Reverse the list, or not
+if (len(sys.argv) > 1 and sys.argv[1] == "-r"):
+    data.reverse()
 
-    print("Please enter either yes or no.")
-
-
-for x in data:
-    print(x)
-
+#Write data to Output.txt
+with open('Output.txt', 'w') as f:
+    for x in data:
+        f.write(x + "\n")
