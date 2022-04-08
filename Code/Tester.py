@@ -1,7 +1,7 @@
 
 import subprocess
 
-
+#Runs a command in the shell to start NamesSorter
 subprocess.run(["python3", "NamesSorter.py"])
 
 f1 = open("Output.txt" , "r")
