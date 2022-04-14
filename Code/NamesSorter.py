@@ -27,9 +27,9 @@ def mySort(data):
 
 #TODO: Add check to see if file exists
 #Read in data
-def readData(f ='Sort Me.txt'):
+def readData(fileName ='Code/Sort Me.txt'):
     data = []
-    with open('Sort Me.txt') as f:
+    with open(fileName) as f:
         #Add all of the data to a list
         for line in f:
             #Cut off any spaces, numbers, or newline characters
@@ -47,6 +47,6 @@ if (len(sys.argv) > 1 and sys.argv[1] == "-r"):
     data.reverse()
 
 #Write data to Output.txt
-with open('Output.txt', 'w') as f:
+with open('Code/Output.txt', 'w') as f:
     for x in data:
         f.write(x + "\n")
